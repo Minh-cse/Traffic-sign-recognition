@@ -31,11 +31,11 @@ The project aims towards assisting drivers in recognizing traffic signs
 git clone https://github.com/Minh-cse/Traffic-sign-recognition.git
 cd Traffic-sign-recognition
 ```
-3. Install npm
+2. Install npm
 ```bash
 npm install
 ```
-5. Run frontend
+3. Run frontend
 ```bash
 npm run dev
 ```
