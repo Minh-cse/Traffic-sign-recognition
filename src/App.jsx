@@ -208,13 +208,13 @@ const App = () => {
               </div>
               {/* Team Members */}
               <div className="flex flex-wrap justify-center gap-8">
-                {[1, 2, 3, 4, 5].map((member, index) => {
+                {["Đặng Ngọc Minh", "Tấn Trường", "Phạm Đức Thiện", "Dương Phạm Ngọc Minh", "Huỳnh Ngọc Vy"].map((member, index) => {
                   // --- LOGIC STARTS HERE ---
                   let roleTitle = "";
 
-                  if (member <= 3) {
+                  if (member === "Đặng Ngọc Minh" || member === "Tấn Trường" || member === "Phạm Đức Thiện") {
                     roleTitle = "AI Engineer";
-                  } else if (member === 4) {
+                  } else if (member === "Dương Phạm Ngọc Minh") {
                     roleTitle = "Frontend Developer";
                   } else {
                     roleTitle = "Reporter";
@@ -228,7 +228,7 @@ const App = () => {
                         <div className="w-24 h-24 bg-white mx-auto rounded-full mb-4 shadow-md flex items-center justify-center text-slate-300 group-hover:scale-110 transition-transform">
                           <User size={40} />
                         </div>
-                        <h3 className="font-bold text-lg text-slate-800">Team Member {member}</h3>
+                        <h3 className="font-bold text-lg text-slate-800">{member}</h3>
                         
                         {/* We use the variable we calculated above */}
                         <p className="text-[#69c280] text-sm font-medium mb-2">{roleTitle}</p>
